@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Me</title>
+    <style>
+        body {
+            background-color: pink;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+        }
+        .button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: white;
+            border: none;
+            border-radius: 5px;
+            color: pink;
+        }
+        .content, .hobbies, .favorites, .about-me {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .hobbies img {
+            max-width: 150px;
+        }
+        .favorites img {
+            max-width: 300px;
+        }
+        .about-me {
+            background: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <h1>Just Me!</h1>
+    
+    <div class="content">
+        <img src="images/me.JPG" alt="Picture of Karol John Vosotros"/>
+        <p>
+            Hello!<br><br>
+            My name is Karol John Vosotros from Consolacion, Cebu. I’m studying for a Bachelor of Science in Information Technology at ACLC College. I’m passionate about finding meaning in life and enjoy learning new things.<br><br>
+            I’m excited about this subject because it relates to my course and will help me understand computers better. I’m always open to connecting with others who have similar interests.<br><br>
+            Feel free to reach out if you’d like to talk or collaborate!
+        </p>
+    </div>
+
+    <div class="button-container">
+        <button id="scrollToHobbiesButton">Hobby</button>
+        <button id="scrollToFavoritesButton">Favorite</button>
+    </div>
+
+    <div class="hobbies" id="hobbiesSection">
+        <h2>Hobby!</h2>
+        <img src="images/anime.jfif" alt="Anime Image"/>
+        <img src="images/ror.jfif" alt="Record of Ragnarok"/>
+        <p>
+            I love watching anime, especially action and romcom genres. I find that anime often resonates with me more than live-action movies. My favorite anime is Record of Ragnarok because I enjoy the epic battles between gods and humans. It’s a thrilling concept that really captures my imagination!
+        </p>
+    </div>
+
+    <div class="favorites" id="favoritesSection">
+        <h2>Favorite Part</h2>
+        <img src="images/mcr.png" alt="My Chemical Romance"/>
+        <p>
+            My Chemical Romance is my favorite band because their music makes me feel uniquely cool and emo. Whenever I listen to them, I connect deeply with their dramatic sound and lyrics. I especially love staying at home and getting lost in their albums, enjoying the comfort of solitude over socializing. Their music creates a personal sanctuary where I feel most myself.
+        </p>
+    </div>
+
+    <div class="about-me">
+        <h2>About Me</h2>
+        <p>
+            <strong>Contact:</strong> You can reach me at <a href="mailto:mevosotroz1@gmail.com">mevosotroz1@gmail.com</a>.<br>
+            <strong>Future Goals:</strong> "My goal is to become a valuable asset to society and a source of pride for ACLC College. I aspire to be a positive force and a meaningful contributor to others' lives, guided by my faith and commitment to making a difference.".<br>
+            <strong>Motto:</strong> "I may forget you, but my heart will always remember you."
+        </p>
+    </div>
+
+    <script>
+        document.getElementById('scrollToHobbiesButton').onclick = function() {
+            document.getElementById('hobbiesSection').scrollIntoView({ behavior: 'smooth' });
+        };
+        document.getElementById('scrollToFavoritesButton').onclick = function() {
+            document.getElementById('favoritesSection').scrollIntoView({ behavior: 'smooth' });
+        };
+    </script>
+</body>
+</html>
